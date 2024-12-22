@@ -1,0 +1,126 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+  width: 80%;
+  margin: auto;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width:1050px) {
+  .app {
+    width: 90%;
+  }
+} */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe4e1, #fff8dc);
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* Link Styling */
+a {
+  text-decoration: none;
+  color: #2980b9; /* Vibrant blue for links */
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #c0392b; /* Bright red for hover effect */
+}
+
+/* Application Container */
+.app {
+  width: 80%;
+  margin: auto;
+  /* background: #ffffff; */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1050px) {
+  .app {
+    width: 90%;
+  }
+}
+
+/* Additional Styling Ideas */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #34495e; /* Darker shade for headings */
+}
+
+p {
+  font-weight: 300;
+  color: #7f8c8d; /* Softer gray for paragraphs */
+}
+
+button {
+  background: #16a085; /* Refreshing green */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: #1abc9c; /* Brighter green for hover */
+  transform: scale(1.05);
+}
